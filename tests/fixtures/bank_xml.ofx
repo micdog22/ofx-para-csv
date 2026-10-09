@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?OFX OFXHEADER="200" VERSION="220" SECURITY="NONE" OLDFILEUID="NONE" NEWFILEUID="NONE"?>
+<!-- Extrato de exemplo com dados fictícios -->
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS><CODE>0</CODE><SEVERITY>INFO</SEVERITY></STATUS>
+      <DTSERVER>20240301120000.000[-3:BRT]</DTSERVER>
+      <LANGUAGE>POR</LANGUAGE>
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <BANKMSGSRSV1>
+    <STMTTRNRS>
+      <TRNUID>2</TRNUID>
+      <STATUS><CODE>0</CODE><SEVERITY>INFO</SEVERITY></STATUS>
+      <STMTRS>
+        <CURDEF>BRL</CURDEF>
+        <BANKACCTFROM>
+          <BANKID>999</BANKID>
+          <BRANCHID>0002</BRANCHID>
+          <ACCTID>98765-4</ACCTID>
+          <ACCTTYPE>SAVINGS</ACCTTYPE>
+        </BANKACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20240201</DTSTART>
+          <DTEND>20240229</DTEND>
+          <STMTTRN>
+            <TRNTYPE>DEP</TRNTYPE>
+            <DTPOSTED>20240202093015.250[-03:BRT]</DTPOSTED>
+            <TRNAMT>1000.00</TRNAMT>
+            <FITID>XML-0001</FITID>
+            <MEMO>Depósito em dinheiro</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>PAYMENT</TRNTYPE>
+            <DTPOSTED>20240210</DTPOSTED>
+            <TRNAMT>-150.75</TRNAMT>
+            <FITID>XML-0002</FITID>
+            <PAYEE>
+              <NAME>Café Exemplo Ltda</NAME>
+              <ADDR1>Rua das Flores, 100</ADDR1>
+              <CITY>Cidade Exemplo</CITY>
+              <STATE>SP</STATE>
+              <POSTALCODE>00000-000</POSTALCODE>
+            </PAYEE>
+            <MEMO/>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>INT</TRNTYPE>
+            <DTPOSTED>20240229</DTPOSTED>
+            <TRNAMT>5.32</TRNAMT>
+            <FITID>XML-0003</FITID>
+            <NAME>Rendimento da poupança</NAME>
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL><BALAMT>854.57</BALAMT><DTASOF>20240229</DTASOF></LEDGERBAL>
+      </STMTRS>
+    </STMTTRNRS>
+  </BANKMSGSRSV1>
+</OFX>

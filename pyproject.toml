@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ofx-para-csv"
+version = "1.0.0"
+description = "Converte extratos bancários e de cartão em OFX para CSV (pronto para o Excel em português), JSON ou resumo do período."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["ofx", "csv", "extrato", "banco", "cartao-de-credito", "financas", "brasil"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/micdog22/ofx-para-csv"
+Issues = "https://github.com/micdog22/ofx-para-csv/issues"
+
+[project.scripts]
+ofx-para-csv = "ofx_para_csv.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
