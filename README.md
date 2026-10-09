@@ -1,4 +1,4 @@
-# OFX para CSV — converta extratos bancários OFX em CSV, JSON ou planilha (Python)
+# OFX para CSV: converta extratos bancários OFX em CSV, JSON ou planilha (Python)
 
 Quase todo banco deixa baixar o extrato em OFX, mas abrir esse arquivo numa planilha é outra história: cada banco usa uma variação do formato (SGML antigo ou XML), acentos em cp1252, valores com vírgula, datas com fuso entre colchetes. O **ofx-para-csv** lê tudo isso e entrega um CSV que abre direto no Excel ou no Google Planilhas em português, um JSON para os seus scripts ou um resumo rápido do período.
 
@@ -151,4 +151,4 @@ Issues e pull requests são bem-vindos. Se o OFX do seu banco não for lido corr
 
 ## Licença
 
-MIT — veja [LICENSE](LICENSE).
+MIT. Veja [LICENSE](LICENSE).
