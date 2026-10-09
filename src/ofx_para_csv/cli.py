@@ -127,7 +127,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         decimal = "," if args.decimal == "virgula" else "."
         text = to_csv(transactions, args.separador, decimal, args.date_style)
         if args.bom:
-            text = "﻿" + text
+            text = "\ufeff" + text
 
     try:
         _write(text, args.saida)

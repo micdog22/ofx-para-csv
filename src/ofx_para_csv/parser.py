@@ -170,7 +170,7 @@ _AMOUNT_RE = re.compile(r"-?(?:\d+(?:\.\d*)?|\.\d+)")
 
 def parse_amount(raw: str) -> Decimal:
     """Aceita ponto ou vírgula como separador decimal (-1234.56, -1234,56, 1.234,56)."""
-    s = (raw or "").strip().replace(" ", "").replace(" ", "")
+    s = (raw or "").strip().replace(" ", "").replace("\u00a0", "")
     if not s:
         raise ValueError("valor vazio")
     if s.startswith("+"):
